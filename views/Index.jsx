@@ -19,7 +19,7 @@ class Index extends React.Component {
             pokemon.map((pokemon, i) => {
               return(
                 <li style={caseStyle}>
-                  {pokemon.name}
+                  {pokemon.name}<a href={`/pokemon/${i}`}>click</a>
                 </li>
               )
             })
