@@ -14,12 +14,13 @@ class Index extends React.Component {
     return (
       <div style={myStyle}>
         <h1>See All The Pokemon!</h1>
+        <button><a href='/pokemon/new'>Create a New Pokemon</a></button>
         <ul>
           {
             pokemon.map((pokemon, i) => {
               return(
                 <li style={caseStyle}>
-                  {pokemon.name}<a href={`/pokemon/${i}`}>click</a>
+                  {pokemon.name}<a href={`/pokemon/${pokemon._id}`}>click</a>
                 </li>
               )
             })

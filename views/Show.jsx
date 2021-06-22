@@ -15,7 +15,8 @@ class Show extends React.Component {
       <div style={myStyle}>
         <h1>Gotta Catch Em All!</h1>
         <h2 style={caseStyle}>{pokemon.name}</h2>
-        <img src={pokemon.img + '.jpg'}></img>
+        <h2 style={caseStyle}>Type: {pokemon.type}</h2>
+        <img src={pokemon.img}></img>
         <br/>
         <a href='/pokemon'>BACK</a>
       </div>
